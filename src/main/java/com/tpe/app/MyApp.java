@@ -18,6 +18,14 @@ public class MyApp {
         //zoomService i newlemedik rica ettik:)
         //zoomService de repoya ihtiyacımız var ancak newlemedik eşantiyon geldi:)
 
+        System.out.println("**************");
+        String[] beanNames=context.getBeanDefinitionNames();
+        for (String name:beanNames){
+            System.out.println("Bean name :" +name);
+        }
+
+        //--------------------------
+        CourseService service2 =context.getBean("zoomService", CourseService.class);
 
     }
 
